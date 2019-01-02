@@ -1,6 +1,6 @@
 var myBooks;
 
-$.getJSON("{{ site.baseurl }}/assets/origin.json", function(data){
+$.getJSON("https://raw.githubusercontent.com/lucienbaumgartner/40k-dev/master/assets/origin.json", function(data){
   myBooks = data;
   console.log(myBooks);
 });
