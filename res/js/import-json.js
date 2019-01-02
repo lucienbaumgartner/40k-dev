@@ -1,6 +1,6 @@
 var myBooks;
 
-$.getJSON("res/origin.json", function(data){
+$.getJSON("/assets/origin.json", function(data){
   myBooks = data;
   console.log(myBooks);
 });
