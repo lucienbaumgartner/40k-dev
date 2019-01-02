@@ -1,6 +1,6 @@
 var myBooks;
 
-$.getJSON("/assets/origin.json", function(data){
+$.getJSON("{{ site.baseurl }}/assets/origin.json", function(data){
   myBooks = data;
   console.log(myBooks);
 });
