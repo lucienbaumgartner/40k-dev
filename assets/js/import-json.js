@@ -1,9 +1,11 @@
+var myBooks;
 
+$.getJSON("../res/origin.json", function(data){
+  myBooks = data;
+  console.log(myBooks);
+});
 
 function CreateTableFromJSON() {
-  var myBooks = $.getJSON( "../res/origin.json", function( json ) {
-      console.log( "JSON Data received, name is " + json.name);
-  });
     // EXTRACT VALUE FOR HTML HEADER.
     // ('Book ID', 'Book Name', 'Category' and 'Price')
     var col = [];
