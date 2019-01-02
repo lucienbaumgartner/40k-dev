@@ -1,4 +1,10 @@
 var myBooks;
+/*
+$.getJSON("assets/origin.json", function(data){
+  myBooks = data;
+  console.log(myBooks);
+});
+*/
 
 $.getJSON("https://raw.githubusercontent.com/lucienbaumgartner/40k-dev/master/assets/origin.json", function(data){
   myBooks = data;
