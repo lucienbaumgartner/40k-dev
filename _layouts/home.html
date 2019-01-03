@@ -8,11 +8,13 @@ layout: default
   {%- endif -%}
   {{ content }}
 
-  <input type="button" onclick="CreateTableFromJSON()" value="Create Table From JSON" />
-    <p id="showData"></p>
+  <button type="button" onclick="CreateTableFromJSON(rankingOverall)" name="button">Ranking Overall</button>
+  <button type="button" onclick="CreateTableFromJSON(gamesPlayed)" name="button">Games Played</button>
+  <button type="button" onclick="CreateTableFromJSON(factionRankings)" name="button">Faction Rankings</button>
+    <div id="showData"></div>
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <h2>Message Log</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>

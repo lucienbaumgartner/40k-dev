@@ -1,4 +1,6 @@
-var myBooks;
+var rankingOverall;
+var gamesPlayed;
+var factionRankings;
 /*
 $.getJSON("assets/origin.json", function(data){
   myBooks = data;
@@ -6,17 +8,25 @@ $.getJSON("assets/origin.json", function(data){
 });
 */
 
-$.getJSON("https://raw.githubusercontent.com/lucienbaumgartner/40k-dev/master/assets/origin.json", function(data){
-  myBooks = data;
-  console.log(myBooks);
+$.getJSON("https://raw.githubusercontent.com/lucienbaumgartner/40k-dev/master/res/origins/ranking.json", function(data){
+  rankingOverall = data;
+  console.log(rankingOverall);
+});
+$.getJSON("https://raw.githubusercontent.com/lucienbaumgartner/40k-dev/master/res/origins/games-played.json", function(data){
+  gamesPlayed = data;
+  console.log(gamesPlayed);
+});
+$.getJSON("https://raw.githubusercontent.com/lucienbaumgartner/40k-dev/master/res/origins/faction-scores.json", function(data){
+  factionRankings = data;
+  console.log(factionRankings);
 });
 
-function CreateTableFromJSON() {
+function CreateTableFromJSON(data) {
     // EXTRACT VALUE FOR HTML HEADER.
     // ('Book ID', 'Book Name', 'Category' and 'Price')
     var col = [];
-    for (var i = 0; i < myBooks.length; i++) {
-        for (var key in myBooks[i]) {
+    for (var i = 0; i < data.length; i++) {
+        for (var key in data[i]) {
             if (col.indexOf(key) === -1) {
                 col.push(key);
             }
@@ -37,13 +47,13 @@ function CreateTableFromJSON() {
     }
 
     // ADD JSON DATA TO THE TABLE AS ROWS.
-    for (var i = 0; i < myBooks.length; i++) {
+    for (var i = 0; i < data.length; i++) {
 
         tr = table.insertRow(-1);
 
         for (var j = 0; j < col.length; j++) {
             var tabCell = tr.insertCell(-1);
-            tabCell.innerHTML = myBooks[i][col[j]];
+            tabCell.innerHTML = data[i][col[j]];
         }
     }
 
