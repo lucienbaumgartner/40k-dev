@@ -8,15 +8,15 @@ $.getJSON("assets/origin.json", function(data){
 });
 */
 
-$.getJSON("https://raw.githubusercontent.com/lucienbaumgartner/40k-dev/master/res/origins/ranking.json", function(data){
+$.getJSON("../res/origins/ranking.json", function(data){
   rankingOverall = data;
   console.log(rankingOverall);
 });
-$.getJSON("https://raw.githubusercontent.com/lucienbaumgartner/40k-dev/master/res/origins/games-played.json", function(data){
+$.getJSON("../res/origins/games-played.json", function(data){
   gamesPlayed = data;
   console.log(gamesPlayed);
 });
-$.getJSON("https://raw.githubusercontent.com/lucienbaumgartner/40k-dev/master/res/origins/faction-scores.json", function(data){
+$.getJSON("../res/origins/faction-scores.json", function(data){
   factionRankings = data;
   console.log(factionRankings);
 });
