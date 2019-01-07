@@ -253,7 +253,7 @@ table {
 
 @media (max-width: 623px) {
   body {
-    font-size: $mobile-font-size;
+    font-size: $mobile-font-size !default;
   }
 }
 
