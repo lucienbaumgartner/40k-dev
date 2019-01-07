@@ -270,13 +270,13 @@
 }
 @media (max-width: 623px) {
   .main-button {
-    font-size: 8px;
+    font-size: 8px !default;
   }
   .display-header {
-    font-size: 8px;
+    font-size: 8px !default;
   }
   .post-header {
-    font-size: 8px;
+    font-size: 8px !default;
   }
 }
 
