@@ -252,8 +252,8 @@ table {
 }
 
 @media (max-width: 623px) {
-  table {
-      font-size: 8px;
+  html {
+    font-size: $mobile-font-size;
   }
 }
 
