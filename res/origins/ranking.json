@@ -1,20 +1,44 @@
 [
     {
-        "Book ID": "1",
-        "Book Name": "Computer Architecture",
-        "Category": "Computers",
-        "Price": "125.60"
+        "Place": "1",
+        "Name": "Player 1",
+        "Category": "Gold",
+        "Main army": "Tyranids",
+        "Points": "12.5"
     },
     {
-        "Book ID": "2",
-        "Book Name": "Asp.Net 4 Blue Book",
-        "Category": "Programming",
-        "Price": "56.00"
+        "Place": "2",
+        "Name": "Player 2",
+        "Category": "Gold",
+        "Main army": "Drukhari",
+        "Points": "10.0"
     },
     {
-        "Book ID": "3",
-        "Book Name": "Popular Science",
-        "Category": "Science",
-        "Price": "210.40"
+        "Place": "3",
+        "Name": "Player 3",
+        "Category": "Gold",
+        "Main army": "Astra Militarum",
+        "Points": "9.5"
+    }
+    {
+        "Place": "4",
+        "Name": "Player 4",
+        "Category": "Silver",
+        "Main army": "Adeptus Custodes",
+        "Points": "7.5"
+    },
+    {
+        "Place": "5",
+        "Name": "Player 5",
+        "Category": "Silver",
+        "Main army": "Adeptus Astartes",
+        "Points": "7.0"
+    },
+    {
+        "Place": "6",
+        "Name": "Player 6",
+        "Category": "Silver",
+        "Main army": "Chaos Demons",
+        "Points": "6.5"
     }
 ]

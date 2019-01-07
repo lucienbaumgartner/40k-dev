@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "The league is online"
+date:   2019-01-07 18:00:46 +0100
+categories: jekyll update
+excerpt_separator: <!--more-->
+---
+You'll find the newly updated results every Saturday.
+
+<!--more-->

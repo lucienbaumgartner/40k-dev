@@ -6,15 +6,21 @@ layout: default
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
-  {{ content }}
 
-  <button type="button" onclick="CreateTableFromJSON(rankingOverall)" name="button">Ranking Overall</button>
-  <button type="button" onclick="CreateTableFromJSON(gamesPlayed)" name="button">Games Played</button>
-  <button type="button" onclick="CreateTableFromJSON(factionRankings)" name="button">Faction Rankings</button>
-    <div id="showData"></div>
+  <h1 class='display-header'>40k League</h1>
+
+  {%- include intro.html -%}
+
+  {{ content }}
+  <div class="btn-container">
+    <button type="button" onclick="CreateTableFromJSON(rankingOverall)" class="main-button">Ranking Overall</button>
+    <button type="button" onclick="CreateTableFromJSON(gamesPlayed)" class="main-button">Games Played</button>
+    <button type="button" onclick="CreateTableFromJSON(factionRankings)" class="main-button">Faction Rankings</button>
+      <div id="showData"></div>
+  </div>
 
   {%- if site.posts.size > 0 -%}
-    <h2>Message Log</h2>
+    <h2 class='post-header'>Message Log</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
@@ -25,9 +31,7 @@ layout: default
             {{ post.title | escape }}
           </a>
         </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
+        {{ post.excerpt }}
       </li>
       {%- endfor -%}
     </ul>
