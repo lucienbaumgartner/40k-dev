@@ -1,17 +1,25 @@
 ---
 layout: default
 ---
-
-<div class="home">
+<div class="container demo-1">
+  <div class="home">
+    <div class="content">
+      <div id="large-header" class="large-header">
+        <canvas id="demo-canvas"></canvas>
+        <h1 class="main-title">Connect <span class="thin">Three</span></h1>
+        <div class="main-buttons">
+          <button type="button" onclick="CreateTableFromJSON(rankingOverall)" name="button">Ranking Overall</button>
+          <button type="button" onclick="CreateTableFromJSON(gamesPlayed)" name="button">Games Played</button>
+          <button type="button" onclick="CreateTableFromJSON(factionRankings)" name="button">Faction Rankings</button>
+            <div id="showData"></div>
+        </div>
+      </div>
+    </div>
+  </div>
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
   {{ content }}
-
-  <button type="button" onclick="CreateTableFromJSON(rankingOverall)" name="button">Ranking Overall</button>
-  <button type="button" onclick="CreateTableFromJSON(gamesPlayed)" name="button">Games Played</button>
-  <button type="button" onclick="CreateTableFromJSON(factionRankings)" name="button">Faction Rankings</button>
-    <div id="showData"></div>
 
   {%- if site.posts.size > 0 -%}
     <h2>Message Log</h2>
@@ -36,3 +44,7 @@ layout: default
   {%- endif -%}
 
 </div>
+<script src="res/js/bkg/js/TweenLite.min.js"></script>
+<script src="res/js/bkg/js/EasePack.min.js"></script>
+<script src="res/js/bkg/js/rAF.js"></script>
+<script src="res/js/bkg/js/demo-1.js"></script>
