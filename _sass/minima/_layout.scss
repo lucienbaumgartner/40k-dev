@@ -263,7 +263,7 @@
  */
 .main-button {
   @include relative-font-size(0.8);
-  @include media-query($on-palm) {
+  @media (max-width: 623px) {
     @include relative-font-size(0.4);
   }
   font-family: 'Press Start 2P', cursive;
@@ -278,7 +278,7 @@
 
 .display-header {
   @include relative-font-size(6);
-  @include media-query($on-palm) {
+  @media (max-width: 623px) {
     @include relative-font-size(2);
   }
   font-family: 'fortyk';
@@ -290,7 +290,7 @@
 
 .post-header {
   @include relative-font-size(3);
-  @include media-query($on-palm) {
+  @media (max-width: 623px) {
     @include relative-font-size(0.8);
   }
   font-family: 'fortyk';
