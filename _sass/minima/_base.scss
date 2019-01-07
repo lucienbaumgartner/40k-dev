@@ -251,6 +251,12 @@ table {
   }
 }
 
+@media (max-width: 623px) {
+  table {
+      font-size: 8px;
+  }
+}
+
 h1 {
   text-align: center;
   padding: 50px;
