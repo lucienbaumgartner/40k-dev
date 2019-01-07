@@ -270,13 +270,14 @@
 }
 @media (max-width: 623px) {
   .main-button {
-    @include relative-font-size(0.4);
+    font-size: $mobile-font-size * 1.2;
+
   }
   .display-header {
-    @include relative-font-size(2);
+    font-size: $mobile-font-size * 1.5;
   }
   .post-header {
-    @include relative-font-size(0.8);
+    font-size: $mobile-font-size * 1;
   }
 }
 
