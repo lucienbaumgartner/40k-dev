@@ -270,13 +270,13 @@
 }
 @media (max-width: 623px) {
   .main-button {
-    @include relative-font-size(0.4);
+    font-size: 8px;
   }
   .display-header {
-    @include relative-font-size(1);
+    font-size: 8px;
   }
   .post-header {
-    @include relative-font-size(0.8);
+    font-size: 8px;
   }
 }
 
