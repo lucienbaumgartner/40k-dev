@@ -18,7 +18,7 @@ email: luciengeorges.baumgartner@uzh.ch
 description: >-
   New year, fresh ideas, new armies, bloodier fights. Get your models on the table and fight.
 baseurl: "/40k-dev" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://lucienbaumgartner.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  lucienbaumgartner
 
