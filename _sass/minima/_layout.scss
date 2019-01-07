@@ -263,13 +263,21 @@
  */
 .main-button {
   @include relative-font-size(0.8);
-  @media (max-width: 623px) {
-    @include relative-font-size(0.4);
-  }
   font-family: 'Press Start 2P', cursive;
   background-color: inherit;
   color: inherit;
   padding: 10px;
+}
+@media (max-width: 623px) {
+  .main-button {
+    @include relative-font-size(0.4);
+  }
+  .display-header {
+    @include relative-font-size(2);
+  }
+  .post-header {
+    @include relative-font-size(0.8);
+  }
 }
 
 .btn-container {
@@ -278,9 +286,6 @@
 
 .display-header {
   @include relative-font-size(6);
-  @media (max-width: 623px) {
-    @include relative-font-size(2);
-  }
   font-family: 'fortyk';
   font-weight: 300;
   line-height: $base-line-height * $base-font-size * 2.25;
@@ -290,9 +295,6 @@
 
 .post-header {
   @include relative-font-size(3);
-  @media (max-width: 623px) {
-    @include relative-font-size(0.8);
-  }
   font-family: 'fortyk';
   font-weight: 300;
   line-height: $base-line-height * $base-font-size * 2.25;
