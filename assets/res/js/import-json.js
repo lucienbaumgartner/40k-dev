@@ -64,6 +64,7 @@ function CreateTableFromJSON(source) {
 function ServiceNotAvailable() {
   var message = document.createElement("p");
   message.innerHTML = "Service not available, yet."
+  message.classList.add("not-available");
   var divContainer = document.getElementById("showData");
   divContainer.innerHTML = "";
   divContainer.appendChild(message);
