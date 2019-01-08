@@ -316,7 +316,10 @@
 
 .not-available {
   text-align: center;
-  padding: 50px 0px;
+  padding: 100px 0px;
+  background-color: $text-color;
+  color: #222222;
+  font-weight: 400;
 }
 
 
