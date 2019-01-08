@@ -4,6 +4,12 @@ layout: default
 
 <h2 class='post-header'>Rules</h2>
 
+**Disclaimer**: If you feel that the rules raise serious issues or have other recommendations/ideas, please <a href="mailto:luciengeorges.baumgartner@uzh.ch?subject=feedback">contact us</a>. The league is no way monetized, we all do this in our leisure time. Please keep that in mind.
+
+<h3 class='rules-sub'>What is a league game</h3>
+
+<p class='tldr'> tldr; play at the store, with a minimum of 1000 points, battle-forged. </p>
+
 Each game satisfying *all* of the following conditions is eligible to be 'league game':
 
 1. The armies of both players
@@ -12,6 +18,10 @@ Each game satisfying *all* of the following conditions is eligible to be 'league
 2. Both players agree that the game is a league game before the game starts
 3. The game is played at the Tactica GbmH
 4. The result of the game is submitted to the according list in the store after the game and validated by both players
+
+<h3 class='rules-sub'>How does the league work?</h3>
+
+<p class='tldr'> tldr; either aim for total victory or try to be the dominant Hive Fleet on the table - or both. </p>
 
 The league functions as follows:
 
@@ -24,7 +34,12 @@ The league functions as follows:
 
 **Clarification: This does not mean that you are restricted to only play one faction. Rather, every game with a faction adds to your respective faction score as well as your overall score. This means that you can have several factions scores (for every faction you at least played once), which in sum result in your overall score.**
 
+<h3 class='rules-sub'>How do I score points</h3>
+
+<p class='tldr'> tldr; by winning. </p>
+
 This is how the scores are computed:
+
 0. Every loss always scores 0 points
 1. Up to week 4, each win scores 1 point
 2. After week 4, we will set up three player categories for the overall ranking:
@@ -35,3 +50,6 @@ This is how the scores are computed:
   + the same level scores 1 point
   + a higher level scores 1.25 points
   + a lower level scores 0.75 points
+4. The level of each player, starting with 2., is determined by his scores from the week before
+5. Level ups and downs will be noted in the ranking
+6. The level difference for faction scores to determine the Best in Faction ranking is the same as for the overall scores; there are no separate Best in Faction levels

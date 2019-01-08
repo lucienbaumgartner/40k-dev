@@ -339,6 +339,15 @@
   }
 }
 
+.tldr {
+  color: #222222;
+  background-color: lighten($text-color, 6%);
+}
+
+.rules-sub {
+  font-family: 'Press Start 2P', cursive;
+}
+
 .not-available {
   text-align: center;
   padding: 100px 0px;
