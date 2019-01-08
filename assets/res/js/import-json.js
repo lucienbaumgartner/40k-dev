@@ -52,7 +52,7 @@ function CreateTableFromJSON(source) {
       }
 
       // ADD JSON DATA TO THE TABLE AS ROWS.
-      for (var i = 0; i < data.length; i++) {
+      for (var i = 0; i < source.length; i++) {
 
           tr = table.insertRow(-1);
 
