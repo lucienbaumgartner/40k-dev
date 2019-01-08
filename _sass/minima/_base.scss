@@ -242,7 +242,8 @@ table {
     padding: ($spacing-unit / 3) ($spacing-unit / 2);
   }
   th {
-    background-color: rgba($grey-color-light, 0.3);
+    background-color: lighten($text-color, 6%);
+    color: #222222;
     border: 0.1px solid darken($grey-color-light, 4%);
     border-bottom-color: darken($grey-color-light, 12%);
   }
