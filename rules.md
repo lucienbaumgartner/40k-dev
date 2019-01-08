@@ -53,3 +53,9 @@ This is how the scores are computed:
 4. The level of each player, starting with 2., is determined by his scores from the week before
 5. Level ups and downs will be noted in the ranking
 6. The level difference for faction scores to determine the Best in Faction ranking is the same as for the overall scores; there are no separate Best in Faction levels
+
+<h3 class='rules-sub'>Prize support</h3>
+
+<p class='tldr'> tldr; no cash, only glory and .... </p>
+
+Since we do not demand any monetary contribution to compete in the league, we cannot hand out cash prizes for the winners. There will we hand made ..., though. The three best of each category will receive those, as well as the Best in Faction for each faction respectively.
