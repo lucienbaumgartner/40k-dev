@@ -328,7 +328,7 @@
   }
   table {
     font-size: $mobile-font-size * 0.9;
-    max-width: 95vw;
+    // max-width: 95vw;
     margin-bottom: $spacing-unit;
   }
   .post-link {
@@ -354,6 +354,10 @@
   background-color: $text-color;
   color: #222222;
   font-weight: 400;
+}
+
+#showData {
+  max-width: 95%;
 }
 
 body {

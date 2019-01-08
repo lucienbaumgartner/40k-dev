@@ -6,7 +6,7 @@ layout: default
 
 **Disclaimer**: If you feel that the rules raise serious issues or have other recommendations/ideas, please <a href="mailto:luciengeorges.baumgartner@uzh.ch?subject=feedback">contact us</a>. The league is no way monetized, we all do this in our leisure time. Please keep that in mind.
 
-<h3 class='rules-sub'>What is a league game</h3>
+<h3 class='rules-sub'>What is a league game?</h3>
 
 <p class='tldr'> tldr; play at the store, with a minimum of 1000 points, battle-forged. </p>
 
@@ -34,7 +34,7 @@ The league functions as follows:
 
 **Clarification: This does not mean that you are restricted to only play one faction. Rather, every game with a faction adds to your respective faction score as well as your overall score. This means that you can have several factions scores (for every faction you at least played once), which in sum result in your overall score.**
 
-<h3 class='rules-sub'>How do I score points</h3>
+<h3 class='rules-sub'>How do I score points?</h3>
 
 <p class='tldr'> tldr; by winning. </p>
 
@@ -56,6 +56,6 @@ This is how the scores are computed:
 
 <h3 class='rules-sub'>Prize support</h3>
 
-<p class='tldr'> tldr; no cash, only glory and .... </p>
+<p class='tldr'> tldr; no cash, only glory and certificates. </p>
 
-Since we do not demand any monetary contribution to compete in the league, we cannot hand out cash prizes for the winners. There will we hand made ..., though. The three best of each category will receive those, as well as the Best in Faction for each faction respectively.
+Since we do not demand any monetary contribution to compete in the league, we cannot hand out cash prizes for the winners. There will we hand made certificates, though. The three best of each category will receive those, as well as the Best in Faction for each faction respectively.
