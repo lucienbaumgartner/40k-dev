@@ -298,10 +298,10 @@
 @include media-query($on-palm) {
   .display-header {
     @include relative-font-size(4);
+    padding-bottom: 20px;
   }
   .post-header {
-    @include relative-font-size(3);
-    padding-bottom: 20px;
+    @include relative-font-size(1);
   }
   .main-button {
     font-size: $mobile-font-size * 0.7;
@@ -325,12 +325,12 @@
 
 
 .post-header {
-  @include relative-font-size(3);
-  font-family: 'fortyk';
+  @include relative-font-size(2);
   font-weight: 300;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: 2px;
   margin-bottom: 20px;
+  font-family: 'Press Start 2P', cursive;
 }
 
 body {
