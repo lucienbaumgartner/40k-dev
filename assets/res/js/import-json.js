@@ -24,6 +24,14 @@ $.getJSON("../40k-dev/assets/res/origins/faction-scores.json", function(data){
 function CreateTableFromJSON(data) {
     // EXTRACT VALUE FOR HTML HEADER.
     // ('Book ID', 'Book Name', 'Category' and 'Price')
+    if (factionRankings == data) {
+      var message = document.createElement("p");
+      message.innerHTML="Whatever text!"
+      var divContainer = document.getElementById("notAvailable");
+      divContainer.innerHTML = "";
+      divContainer.appendChild(message);
+    }
+
     var col = [];
     for (var i = 0; i < data.length; i++) {
         for (var key in data[i]) {
