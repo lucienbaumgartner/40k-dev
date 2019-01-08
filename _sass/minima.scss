@@ -10,6 +10,7 @@
 $base-font-family: 'Source Code Pro', monospace;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
+$mobile-font-size: 10px !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
@@ -31,7 +32,7 @@ $content-width:    800px !default;
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
-
+/*
 @mixin media-query($on-palm) {
   .wrapper {
     padding-right: $spacing-unit / 2;
@@ -44,7 +45,7 @@ $on-laptop:        800px !default;
     font-size: $small-font-size * 1.2 !important;
   }
 }
-
+*/
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;

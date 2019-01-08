@@ -295,6 +295,25 @@
   margin-bottom: 20px;
 }
 
+@include media-query($on-palm) {
+  .display-header {
+    @include relative-font-size(4)
+  }
+  .post-header {
+    @include relative-font-size(3)
+  }
+  .main-button {
+    font-size: $mobile-font-size * 0.7;
+  }
+  body {
+    font-size: $mobile-font-size;
+  }
+  table {
+    font-size: $mobile-font-size * 0.9;
+  }
+}
+
+
 .post-header {
   @include relative-font-size(3);
   font-family: 'fortyk';
