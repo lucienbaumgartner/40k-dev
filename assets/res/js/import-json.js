@@ -8,6 +8,8 @@ $.getJSON("assets/origin.json", function(data){
 });
 */
 
+
+
 $.getJSON("../40k-dev/assets/res/origins/ranking.json", function(data){
   rankingOverall = data;
   console.log(rankingOverall);
@@ -22,6 +24,8 @@ $.getJSON("../40k-dev/assets/res/origins/faction-scores.json", function(data){
 });
 
 function CreateTableFromJSON(source) {
+      setTimeout("document.getElementById('showData').focus();",100);
+
       var col = [];
       for (var i = 0; i < source.length; i++) {
           for (var key in source[i]) {
