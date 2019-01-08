@@ -22,13 +22,6 @@ $.getJSON("../40k-dev/assets/res/origins/faction-scores.json", function(data){
 });
 
 function CreateTableFromJSON(source) {
-    if ("factionRankings" === source.name) {
-      var message = document.createElement("p");
-      message.innerHTML = "Service not available, yet."
-      var divContainer = document.getElementById("notAvailable");
-      divContainer.innerHTML = "";
-      divContainer.appendChild(message);
-    } else {
       var col = [];
       for (var i = 0; i < source.length; i++) {
           for (var key in source[i]) {
@@ -66,5 +59,12 @@ function CreateTableFromJSON(source) {
       var divContainer = document.getElementById("showData");
       divContainer.innerHTML = "";
       divContainer.appendChild(table);
-    }
+}
+
+function ServiceNotAvailble(source) {
+  var message = document.createElement("p");
+  message.innerHTML = "Service not available, yet."
+  var divContainer = document.getElementById("showData");
+  divContainer.innerHTML = "";
+  divContainer.appendChild(message);
 }
