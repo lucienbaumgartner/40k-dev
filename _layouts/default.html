@@ -16,7 +16,12 @@
     {%- include footer.html -%}
 
     <script type="text/javascript">
-      $(window).load(CreateTableFromJSON(rankingOverall));
+      sso.submit();
+      setTimeout(function() { history.back();},1000)
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(CreateTableFromJSON(rankingOverall));
     </script>
 
   </body>
