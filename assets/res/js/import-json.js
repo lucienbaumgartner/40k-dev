@@ -22,7 +22,7 @@ $.getJSON("../40k-dev/assets/res/origins/faction-scores.json", function(data){
 });
 
 function CreateTableFromJSON(source) {
-    if ("factionRankings" === String(source)) {
+    if ("factionRankings" === source.name) {
       var message = document.createElement("p");
       message.innerHTML = "Service not available, yet."
       var divContainer = document.getElementById("notAvailable");
