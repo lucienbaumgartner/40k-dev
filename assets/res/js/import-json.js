@@ -22,7 +22,7 @@ $.getJSON("../40k-dev/assets/res/origins/faction-scores.json", function(data){
 });
 
 function CreateTableFromJSON(source) {
-    if (factionRankings == source) {
+    if ("factionRankings" === String(source)) {
       var message = document.createElement("p");
       message.innerHTML="Whatever text!"
       var divContainer = document.getElementById("notAvailable");
