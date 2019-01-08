@@ -8,15 +8,15 @@ $.getJSON("assets/origin.json", function(data){
 });
 */
 
-$.getJSON("../assets/res/origins/ranking.json", function(data){
+$.getJSON("../40k-dev/assets/res/origins/ranking.json", function(data){
   rankingOverall = data;
   console.log(rankingOverall);
 });
-$.getJSON("../assets/res/origins/games-played.json", function(data){
+$.getJSON("../40k-dev/assets/res/origins/games-played.json", function(data){
   gamesPlayed = data;
   console.log(gamesPlayed);
 });
-$.getJSON("../assets/res/origins/faction-scores.json", function(data){
+$.getJSON("../40k-dev/assets/res/origins/faction-scores.json", function(data){
   factionRankings = data;
   console.log(factionRankings);
 });
