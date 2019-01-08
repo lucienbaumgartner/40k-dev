@@ -319,6 +319,9 @@
   }
   .main-button {
     font-size: $mobile-font-size * 0.7;
+    width: $spacing-unit * 3;
+    line-height: $spacing-unit/2.5;
+    padding: 5px;
   }
   body {
     font-size: $mobile-font-size;
