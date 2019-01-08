@@ -301,7 +301,7 @@
     padding-bottom: 20px;
   }
   .post-header {
-    @include relative-font-size(1);
+    @include relative-font-size(0.5);
   }
   .main-button {
     font-size: $mobile-font-size * 0.7;
@@ -312,6 +312,7 @@
   table {
     font-size: $mobile-font-size * 0.9;
     max-width: 95vw;
+    margin-bottom: $spacing-unit;
   }
 }
 
