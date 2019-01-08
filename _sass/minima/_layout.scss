@@ -262,12 +262,14 @@
  * Buttons
  */
 .main-button {
-  @include relative-font-size(0.8);
+  @include relative-font-size(1);
   font-family: 'Press Start 2P', cursive;
-  background-color: inherit;
+  background-color: $background-color;
   color: inherit;
   padding: 10px;
-  display:block;
+  display: block;
+  float:left;
+  border-color: lighten($text-color, 6%);
 }
 /*
 @media (max-width: 623px) {
@@ -285,6 +287,7 @@
 
 .btn-container {
   margin-top: $spacing-unit;
+  display: inline-block;
 }
 
 .display-header {
@@ -296,13 +299,23 @@
   margin-bottom: 20px;
 }
 
+.post-header {
+  @include relative-font-size(2);
+  font-weight: 300;
+  line-height: $base-line-height * $base-font-size * 2.25;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-family: 'Press Start 2P', cursive;
+}
+
 @include media-query($on-palm) {
   .display-header {
     @include relative-font-size(4);
     padding-bottom: 20px;
   }
   .post-header {
-    @include relative-font-size(0.5);
+    @include relative-font-size(1);
+    margin-bottom: 5px;
   }
   .main-button {
     font-size: $mobile-font-size * 0.7;
@@ -315,6 +328,12 @@
     max-width: 95vw;
     margin-bottom: $spacing-unit;
   }
+  .post-link {
+    @include relative-font-size(1);
+  }
+  .post-meta {
+    font-size: $small-font-size /1.2;
+  }
 }
 
 .not-available {
@@ -323,16 +342,6 @@
   background-color: $text-color;
   color: #222222;
   font-weight: 400;
-}
-
-
-.post-header {
-  @include relative-font-size(2);
-  font-weight: 300;
-  line-height: $base-line-height * $base-font-size * 2.25;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  font-family: 'Press Start 2P', cursive;
 }
 
 body {
