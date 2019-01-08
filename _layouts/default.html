@@ -1,9 +1,14 @@
 <!DOCTYPE html>
+
+<script type="text/javascript">
+  $(document).ready(CreateTableFromJSON(rankingOverall));
+</script>
+
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {%- include head.html -%}
 
-  <body onload="CreateTableFromJSON(rankingOverall)">
+  <body>
 
     {%- include header.html -%}
 
