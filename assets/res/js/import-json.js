@@ -7,18 +7,23 @@ $.getJSON("assets/origin.json", function(data){
   console.log(myBooks);
 });
 */
+var base_url = window.location.href
 
+if (base_url.includes('localhost')) {
+  var rel_url = ''
+} else {
+  var rel_url = '../40k-dev'
+}
 
-
-$.getJSON("../40k-dev/assets/res/origins/ranking.json", function(data){
+$.getJSON(rel_url.concat("/assets/res/origins/ranking.json"), function(data){
   rankingOverall = data;
   console.log(rankingOverall);
 });
-$.getJSON("../40k-dev/assets/res/origins/games-played.json", function(data){
+$.getJSON(rel_url.concat("/assets/res/origins/games-played.json"), function(data){
   gamesPlayed = data;
   console.log(gamesPlayed);
 });
-$.getJSON("../40k-dev/assets/res/origins/faction-scores.json", function(data){
+$.getJSON(rel_url.concat("/assets/res/origins/faction-scores.json"), function(data){
   factionRankings = data;
   console.log(factionRankings);
 });
