@@ -226,21 +226,24 @@ pre {
 /**
  * Tables
  */
- 
+
 table {
   margin-bottom: $spacing-unit*2;
-  width: 100%;
+  width: 80%;
   text-align: $table-text-align;
   color: lighten($text-color, 18%);
   border-collapse: collapse;
   border: 0.1px solid $grey-color-light;
+  overflow: hidden;
+
   tr {
     &:nth-child(even) {
       background-color: rgba(19, 34, 42, 0.5);
     }
   }
   th, td {
-    padding: ($spacing-unit / 3) ($spacing-unit / 2);
+    padding: ($spacing-unit / 5) ($spacing-unit / 4);
+    text-overflow: ellipsis;
   }
   th {
     background-color: lighten($text-color, 6%);
