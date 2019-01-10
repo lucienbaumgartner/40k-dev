@@ -44,8 +44,12 @@ function CreateTableFromJSON(source) {
       var table = document.createElement("table");
 
       // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+      var thead = document.createElement("thead")
+      var tbody = document.createElement("tbody")
+      table.appendChild(thead)
+      table.appendChild(tbody)
 
-      var tr = table.insertRow(-1);                   // TABLE ROW.
+      var tr = thead.insertRow(-1);                   // TABLE ROW.
 
       for (var i = 0; i < col.length; i++) {
           var th = document.createElement("th");      // TABLE HEADER.
@@ -56,7 +60,7 @@ function CreateTableFromJSON(source) {
       // ADD JSON DATA TO THE TABLE AS ROWS.
       for (var i = 0; i < source.length; i++) {
 
-          tr = table.insertRow(-1);
+          tr = tbody.insertRow(-1);
 
           for (var j = 0; j < col.length; j++) {
               var tabCell = tr.insertCell(-1);

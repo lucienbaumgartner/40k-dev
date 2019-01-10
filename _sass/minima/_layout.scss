@@ -326,11 +326,50 @@
   body {
     font-size: $mobile-font-size;
   }
+  /*
   table {
     font-size: $mobile-font-size * 0.9;
-    // max-width: 95vw;
     margin-bottom: $spacing-unit;
+    width:100%;
+    table-layout: fixed;
+    display:block;
+    overflow:auto;
+    height:200px;
   }
+  thead {
+    position: sticky;
+    top: 0;
+  }
+  */
+
+  table {
+  border-collapse: collapse;
+  width: 300px;
+  overflow-x: scroll;
+  display: block;
+}
+
+
+thead,
+tbody {
+  display: block;
+}
+
+tbody {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 140px;
+}
+
+td,
+th {
+  min-width: 50px;
+  height: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
+}
+
   .post-link {
     @include relative-font-size(1);
   }
@@ -357,7 +396,7 @@
 }
 
 #showData {
-  max-width: 80%;
+  max-width: 90vw;
 }
 
 body {

@@ -25,6 +25,7 @@ body {
   font-kerning: normal;
   display: flex;
   min-height: 100vh;
+  max-width: 100vw;
   flex-direction: column;
 }
 
@@ -173,8 +174,7 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+  max-width: 50%;
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing-unit;
@@ -226,6 +226,7 @@ pre {
 /**
  * Tables
  */
+ 
 table {
   margin-bottom: $spacing-unit*2;
   width: 100%;

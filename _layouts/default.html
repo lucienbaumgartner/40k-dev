@@ -4,6 +4,11 @@
   {%- include head.html -%}
 
   <body>
+    <script type="text/javascript">
+    $('table').on('scroll', function() {
+      $("table > *").width($("table").width() + $("table").scrollLeft());
+    });
+    </script>
 
     {%- include header.html -%}
 
