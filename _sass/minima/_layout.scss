@@ -284,12 +284,16 @@
   }
 }
 */
-
-.btn-container {
-  margin-top: $spacing-unit;
-  display: inline-block;
+.btn-container-outer {
+  width: 100%;
+  margin-bottom: $spacing-unit/2;
 }
-
+.btn-container-inner {
+  display: table;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
 .display-header {
   @include relative-font-size(6);
   font-family: 'fortyk';
@@ -348,27 +352,31 @@ table {
   overflow-x: scroll;
   overflow-y: scroll;
   display: block;
+  table-layout: fixed;
+  //table-layout: auto;
 }
 
 
 thead,
 tbody {
-  display: block;
+  //display: block;
 }
 
 tbody {
-  height: 50%;
-  //overflow-y: scroll;
+  height: 200px;
+  overflow-y: scroll;
   //overflow-x: hidden;
 }
 
 td,
 th {
-  min-width: 100px;
+  // min-width: 30px;
   height: 25px;
   overflow: hidden;
-  max-width: 200px;
+  //max-width: 200px;
+  //word-break: break-all;
 }
+
 
 thead {
   position: sticky;
@@ -399,11 +407,33 @@ thead {
   color: #222222;
   font-weight: 400;
 }
-/*
+
 #showData {
-  width: 100%;
+  display: table;
+  margin: 0 auto;
+  min-width: 80%;
+  height: 200px;
 }
-*/
+#intro {
+  width: 95%;
+  margin: $spacing-unit auto;
+}
+#table-comment {
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit*2;
+  width: 90%;
+  display: table;
+  margin: 0 auto;
+  font-size: 10px;
+}
+#results-header {
+  @include relative-font-size(1);
+  font-weight: 300;
+  line-height: $base-line-height * $base-font-size * 2.25;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-family: 'Press Start 2P', cursive
+}
 body {
   background-color: #222222;
   background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
