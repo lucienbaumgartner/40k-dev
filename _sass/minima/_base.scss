@@ -228,13 +228,14 @@ pre {
  */
 
 table {
-  margin-bottom: $spacing-unit;
-  width: 80%;
   text-align: $table-text-align;
   color: lighten($text-color, 18%);
   border-collapse: collapse;
   border: 0.1px solid $grey-color-light;
-  overflow: hidden;
+  display: inline-block;
+  table-layout: fixed;
+  margin-bottom: $spacing-unit;
+  max-width: 100%;
 
   tr {
     &:nth-child(even) {
@@ -242,8 +243,9 @@ table {
     }
   }
   th, td {
-    padding: ($spacing-unit / 5) ($spacing-unit / 4);
-    text-overflow: ellipsis;
+    padding: ($spacing-unit / 3) ($spacing-unit / 3);
+    // min-width: 30px;
+    height: 25px;
   }
   th {
     background-color: lighten($text-color, 6%);
@@ -254,6 +256,7 @@ table {
   td {
     border: 0.1px solid $grey-color-light;
   }
+
 }
 
 h1 {
