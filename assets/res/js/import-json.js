@@ -15,7 +15,7 @@ if (base_url.includes('localhost')) {
   var rel_url = '../40k-dev'
 }
 
-$.getJSON(rel_url.concat("/assets/res/origins/ranking.json"), function(data){
+$.getJSON(rel_url.concat("/assets/res/origins/ranking_2.json"), function(data){
   rankingOverall = data;
   console.log(rankingOverall);
 });
