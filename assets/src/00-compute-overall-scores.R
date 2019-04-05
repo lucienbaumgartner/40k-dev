@@ -1,6 +1,8 @@
 library(dplyr)
 library(lubridate)
 library(reshape2)
+library(readr)
+library(jsonlite)
 
 setwd('~/40k-dev/assets/res/')
 df <- 
@@ -71,5 +73,15 @@ main_army <-
   filter(n==max(n)&!duplicated(player)) %>% 
   select(-n)
 
-left_join(ranking, score_comp) %>% left_join(., main_army)
-  
+dfx <- 
+  left_join(ranking, score_comp) %>% 
+  left_join(., main_army) %>% 
+  arrange(desc(points), player) %>% 
+  mutate(rank=row_number(),
+         category="") %>% 
+  select(rank, player, category, points, n.games,  win, loss, tie, faction) %>% 
+  setNames(., c('Place', 'Name',	'Category', 'Score',	'Games',	'Wins',	'Losses', 'Tie', 'Main army'))
+
+toJSON(dfx, raw = 'mongo') %>% write_lines(., path='origins/ranking_2.json')
+
+
